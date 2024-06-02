@@ -2,7 +2,7 @@ const Page = () => {
     return (
         <div>
 
-            This should be unprotected
+           <h1>This should be unprotected</h1> 
         </div>
       );
 }
