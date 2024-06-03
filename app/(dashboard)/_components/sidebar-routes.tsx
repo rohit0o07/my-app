@@ -16,6 +16,7 @@ const guestRoutes = [
     href: '/search',
   },
 ];
+
 const teacherRoutes = [
   {
     icon: List,
@@ -30,11 +31,10 @@ const teacherRoutes = [
 ]
 
 export const  SidebarRoutes = () => {
-  const routes = guestRoutes;
   const pathname = usePathname()
 
   const isTeacherPage = pathname?.includes("/teacher")
-  const router = isTeacherPage ? teacherRoutes : guestRoutes
+  const routes = isTeacherPage ? teacherRoutes : guestRoutes
 
   return (
     <div className="flex flex-col w-full">

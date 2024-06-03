@@ -3,7 +3,7 @@
 import { UserButton } from "@clerk/nextjs"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Button } from "./ui/button"
+import { Button } from "@/components/ui/button"
 import { LogOut } from "lucide-react"
 
 export const NavbarRoutes = () => {
@@ -14,7 +14,7 @@ export const NavbarRoutes = () => {
     return(
         <div className="flex gap-x-2 ml-auto">
            { isTeacherPage || isPlayerPage ? (
-           <Link href='/teacher/courses'>
+           <Link href='/'>
             <Button size="sm" variant="ghost">
                     <LogOut className="h-4 w-4 mr-2"/>
                     Exit
